@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import {
   Typography,
   Button,
-  Box,
   Divider,
   CircularProgress,
   Alert,
