@@ -14,7 +14,7 @@ export const api = {
   getRooms: async () => {
     const response = await fetch(`${API_BASE}/rooms`, {
       method: "GET",
-      credentials: "include",   // important!
+      // credentials: "include",   // important!
       headers: {
         "Content-Type": "application/json"
       }
@@ -26,7 +26,7 @@ export const api = {
   createBooking: async (bookingData) => {
     const response = await fetch(`${API_BASE}/bookings`, {
       method: "POST",
-      credentials: "include",
+      // credentials: "include",
       headers: {
         "Content-Type": "application/json"
       },
@@ -38,7 +38,7 @@ export const api = {
   getBookings: async () => {
     const response = await fetch(`${API_BASE}/bookings`, {
       method: "GET",
-      credentials: "include",
+      // credentials: "include",
       headers: {
         "Content-Type": "application/json"
       }
@@ -49,7 +49,7 @@ export const api = {
   cancelBooking: async (bookingId) => {
     const response = await fetch(`${API_BASE}/bookings/${bookingId}/cancel`, {
       method: "POST",
-      credentials: "include",
+      // credentials: "include",
       headers: {
         "Content-Type": "application/json"
       },
@@ -63,7 +63,7 @@ export const api = {
     const url = `${API_BASE}/analytics?from=${from}&to=${to}`;
     const response = await fetch(url, {
       method: "GET",
-      credentials: "include",
+      // credentials: "include",
       headers: {
         "Content-Type": "application/json"
       }
