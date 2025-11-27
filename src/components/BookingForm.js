@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { api } from '../api/api';
-import { getLocalISOString, formatCurrency } from '../utils/formatter.js';
+import { formatCurrency } from '../utils/formatter.js';
 
 const useStyles = makeStyles((theme) => ({
   form: {
